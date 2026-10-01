@@ -1,0 +1,55 @@
+from turtle import*
+def square(pen,length):
+    for i in range(4):
+        pen.forward(length)
+        pen.left(90)
+def main():
+    space=Screen()
+    t1=Turtle()
+    for i in range(3):
+        t1.penup()
+        t1.goto(i*100,0)
+        t1.pendown()
+        square(t1,50)
+main()
+
+from turtle import*
+space=Screen()
+turtle=Turtle()
+def draw_triangle(turtle, xpos, ypos, length, color, heading):
+    turtle.penup()
+    turtle.goto(xpos,ypos) 
+    turtle.setheading(heading)
+    turtle.pencolor(color)
+    turtle.pendown()
+    turtle.color(color)
+    for i in range (3):
+        turtle.begin_fill()
+        turtle.forward(length)
+        turtle.left(120)
+        turtle.end_fill()
+draw_triangle(turtle,-120,30,60,'green',60)
+draw_triangle(turtle,-120,30,60,'green',240)
+
+
+from turtle import*
+screen=Screen()
+turtle=Turtle()
+def drawPlus(turtle,space):
+    turtle.stamp()
+    turtle.goto(0,0)
+    turtle.shape('turtle')
+    turtle.stamp()
+    turtle.forward(50)
+    turtle.backward(100)
+    turtle.goto(0,0)
+    turtle.left(90)
+    turtle.forward(50)
+    turtle.backward(100)
+
+drawPlus(turtle,30)
+    
+
+        
+
+
